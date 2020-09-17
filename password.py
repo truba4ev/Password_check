@@ -2,13 +2,14 @@ a = input('Введите пароль: ')
 result = 0
 
 try:
-    result = int(a) + len()
-except ValueError:
+    result = int(a) / len()
+except ZeroDivisionError:
     print('Вы ввели пустой пароль.')
 except TypeError:
-    print('Ваш пароль состоит только из цифр') 
-except:
+    print('Ваш пароль состоит только из цифр.')
+except ValueError:
     print('Требования к паролю соблюдены')
+
 
 
 #Задача: написать программу проверяющую введенный пользователем пароль на наличие цифр.
